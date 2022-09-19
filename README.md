@@ -29,34 +29,35 @@
 - Код реализации выполнения задания. Визуализация результатов выполнения (если применимо).
 - Задание 2.
 - Код реализации выполнения задания. Визуализация результатов выполнения (если применимо).
-- Задание 3.
-- Код реализации выполнения задания. Визуализация результатов выполнения (если применимо).
+
 - Выводы.
 - ✨Magic ✨
 
 ## Цель работы
-Ознакомиться с основными операторами зыка Python на примере реализации линейной регрессии.
+Ознакомиться с основными операторами языка Python на примере реализации линейной регрессии.
 
 ## Задание 1
 ### Пошагово выполнить каждый пункт раздела "ход работы" с описанием и примерами реализации задач
 Ход работы:
 Написать программы Hello World на Python и Unity
 - На Python
-![Отчет hello world in python](https://user-images.githubusercontent.com/97295011/190987455-a064be6b-3d9a-4785-a75b-9ad9bf680b3e.jpg)
+  ![Отчет hello world in python](https://user-images.githubusercontent.com/97295011/190987455-a064be6b-3d9a-4785-a75b-9ad9bf680b3e.jpg)
 - На Unity
-![Отчет hello world in unity](https://user-images.githubusercontent.com/97295011/190987514-37308dae-6700-42c5-80ed-062496f1e8a1.jpg)
-
+  ![Отчет hello world in unity](https://user-images.githubusercontent.com/97295011/190987514-37308dae-6700-42c5-80ed-062496f1e8a1.jpg)
+  В левом нижнем углу Unity можно увидеть вывод "Hello World!" в консоль.
 
 
 ## Задание 2
 ### В разделе "ход работы" пошагово выполнить каждый пункт с описанием и примером реализации задачи по теме лабораторной работы
-- 1. Производим подготовку данных для работы с алгоритмом линейной регрессии. 10 видов данных были установлены случайным образом, и данные находились в линейной зависимости. Данные преобразуются в формат массива, чтобы их можно было вычислить напрямую при использовании умножения и сложения.
-![1](https://user-images.githubusercontent.com/97295011/190991378-2953d397-9561-42e5-858e-72723fde6670.JPG)
+- 1.Производим подготовку данных для работы с алгоритмом линейной регрессии. 10 видов данных были установлены случайным образом, и данные находились в линейной зависимости. Данные преобразуются в формат массива, чтобы их можно было вычислить напрямую при использовании умножения и сложения.
 
-- 2. Определяем связанные функции. Функция модели: определяет модель линейной регрессии wx+b. Функция потерь: функция потерь среднеквадратичной ошибки. Функция оптимизации: метод градиентного спуска для нахождени частных производных w и b.
-![2](https://user-images.githubusercontent.com/97295011/190991975-2fbba71b-f569-463a-a783-cb9ca5f8701e.JPG)
+  ![1](https://user-images.githubusercontent.com/97295011/190991378-2953d397-9561-42e5-858e-72723fde6670.JPG)
 
-- 3. Начинаем итерацию
+- 2.Определяем связанные функции. Функция модели: определяет модель линейной регрессии wx+b. Функция потерь: функция потерь среднеквадратичной ошибки. Функция оптимизации: метод градиентного спуска для нахождени частных производных w и b.
+
+  ![2](https://user-images.githubusercontent.com/97295011/190991975-2fbba71b-f569-463a-a783-cb9ca5f8701e.JPG)
+
+- 3.Начинаем итерацию
 
      Шаг 1 Инициализация и модель итеративной оптимизации
      
@@ -83,46 +84,15 @@
      ![3 6](https://user-images.githubusercontent.com/97295011/190994729-5baab077-554c-430f-aad8-88089008a2d9.JPG)
      
 
-## Задание 3
-### Какова роль параметра Lr? Ответьте на вопрос, приведите пример выполнения кода, который подтверждает ваш ответ. В качестве эксперимента можете изменить значение параметра.
-
-- Перечисленные в этом туториале действия могут быть выполнены запуском на исполнение скрипт-файла, доступного [в репозитории](https://github.com/Den1sovDm1triy/hfss-scripting/blob/main/ScreatingSphereInAEDT.py).
-- Для запуска скрипт-файла откройте Ansys Electronics Desktop. Перейдите во вкладку [Automation] - [Run Script] - [Выберите файл с именем ScreatingSphereInAEDT.py из репозитория].
-
-```py
-
-import ScriptEnv
-ScriptEnv.Initialize("Ansoft.ElectronicsDesktop")
-oDesktop.RestoreWindow()
-oProject = oDesktop.NewProject()
-oProject.Rename("C:/Users/denisov.dv/Documents/Ansoft/SphereDIffraction.aedt", True)
-oProject.InsertDesign("HFSS", "HFSSDesign1", "HFSS Terminal Network", "")
-oDesign = oProject.SetActiveDesign("HFSSDesign1")
-oEditor = oDesign.SetActiveEditor("3D Modeler")
-oEditor.CreateSphere(
-	[
-		"NAME:SphereParameters",
-		"XCenter:="		, "0mm",
-		"YCenter:="		, "0mm",
-		"ZCenter:="		, "0mm",
-		"Radius:="		, "1.0770329614269mm"
-	], 
-)
-
-```
-
 ## Выводы
+   В результате проделанной работы я ознакомился с основными операторами языка Python на примере реализации линейной регрессии. Вывел в консоль Unity и Python текст - "Hello World!".
 
 Абзац умных слов о том, что было сделано и что было узнано.
 
 | Plugin | README |
 | ------ | ------ |
-| Dropbox | [plugins/dropbox/README.md][PlDb] |
 | GitHub | [plugins/github/README.md][PlGh] |
-| Google Drive | [plugins/googledrive/README.md][PlGd] |
-| OneDrive | [plugins/onedrive/README.md][PlOd] |
-| Medium | [plugins/medium/README.md][PlMe] |
-| Google Analytics | [plugins/googleanalytics/README.md][PlGa] |
+
 
 ## Powered by
 
