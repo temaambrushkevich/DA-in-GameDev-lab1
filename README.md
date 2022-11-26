@@ -44,7 +44,7 @@
   ![Отчет hello world in python](https://user-images.githubusercontent.com/97295011/190987455-a064be6b-3d9a-4785-a75b-9ad9bf680b3e.jpg)
 - На Unity
   ![Отчет hello world in unity](https://user-images.githubusercontent.com/97295011/190987514-37308dae-6700-42c5-80ed-062496f1e8a1.jpg)
-  В левом нижнем углу Unity можно увидеть вывод "Hello World!" в консоль.
+  В левом нижнем углу Unity можно увидеть вывод "Hello World!" в консоль, при нажатии клавиши "пробел".
 
 
 ## Задание 2
